@@ -1,13 +1,15 @@
 package thread;
-
-import com.sun.security.jgss.GSSUtil;
-
 public class ThreadChild extends Thread{
 
     public void run() {
-        for(int i=0; i<5; i++){
-
-            System.out.println("Child Thread");
+        //Thread.yield();
+        for(int i=0; i<5; i++) {
+            try {
+                Thread.sleep(500);
+                System.out.println("Child Thread");
+            } catch (InterruptedException e) {
+                System.out.println("Sleep was Interuptted");
+            }
         }
     }
 }
