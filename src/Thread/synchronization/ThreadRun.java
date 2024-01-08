@@ -1,4 +1,4 @@
-package synchronization;
+package Thread.synchronization;
 
 public class ThreadRun extends Thread{
 

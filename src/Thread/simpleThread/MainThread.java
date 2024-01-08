@@ -1,4 +1,4 @@
-package thread;
+package Thread.simpleThread;
 
 public class MainThread {
 

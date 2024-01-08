@@ -1,4 +1,4 @@
-package thread;
+package Thread.simpleThread;
 public class ThreadChild extends Thread{
 
     public void run() {
