@@ -1,8 +1,5 @@
 package Thread.lock;
-
-
 public class MainThread {
-
     public static void main(String[] args) throws InterruptedException {
 
         ObjectLevelLocking ob = new ObjectLevelLocking();

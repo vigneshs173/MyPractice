@@ -5,7 +5,6 @@ public class ObjectLevelLocking extends Thread{
 
     public final Object lock = new Object();
     public void incrementCounter() {
-
         synchronized (lock) {
             counter++;
         }
