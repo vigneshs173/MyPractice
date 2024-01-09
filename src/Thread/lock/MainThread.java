@@ -25,12 +25,16 @@ public class MainThread {
                     throw new RuntimeException(e);
                 }
             }
-        });
+        }) {
+            public void run() {
+                System.out.println("Hii");
+            }
+        };
 
-        t1.start();
+        //t1.start();
         t2.start();
 
-        t1.join();
+        //t1.join();
         t2.join();
 
         System.out.println("Count : "+ ob.getCounter());
