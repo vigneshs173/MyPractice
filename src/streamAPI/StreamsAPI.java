@@ -12,5 +12,13 @@ public class StreamsAPI {
             .map(String::toUpperCase)
             .sorted(String::compareTo)
             .forEach(System.out::println);
+
+    List<String> list2 = Arrays.asList("a1", "a2", "b1", "c2", "c1");
+        list2.stream()
+                .filter(s -> s.startsWith("c"))
+            .map(String::toUpperCase)
+            .sorted(String::compareTo)
+            .forEach(System.out::println);
+
     }
 }
